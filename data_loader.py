@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class DataLoader:
-    def __init__(self, train_path, test_path):
+    def __init__(self, train_path,test_path):
         #__init__ fja se poziva automatski prilikom kreiranja objekta
         #train_path:putanja do train.tsv fajla
         #test_path:putanja do test.tsv fajla
@@ -22,7 +22,7 @@ class DataLoader:
             #train podaci
             print("Učitavanje train podataka...")
             self.train_data = pd.read_csv(self.train_path, sep=',')
-            print(f"Train podaci učitani: {self.train_data.shape}")
+            print(f"Podaci učitani: {self.train_data.shape}")
         
             #test podaci
             print("Učitavanje test podataka...")
